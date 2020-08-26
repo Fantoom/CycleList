@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CycleList", "CycleList\CycleList.csproj", "{0D3B1471-BF26-4A3C-B01E-146A6CBF98DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CycleListTest", "CycleListTest\CycleListTest.csproj", "{5775A2B4-77F6-4C65-AF40-7E8A3435364D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D3B1471-BF26-4A3C-B01E-146A6CBF98DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D3B1471-BF26-4A3C-B01E-146A6CBF98DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D3B1471-BF26-4A3C-B01E-146A6CBF98DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D3B1471-BF26-4A3C-B01E-146A6CBF98DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5775A2B4-77F6-4C65-AF40-7E8A3435364D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5775A2B4-77F6-4C65-AF40-7E8A3435364D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5775A2B4-77F6-4C65-AF40-7E8A3435364D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5775A2B4-77F6-4C65-AF40-7E8A3435364D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F57EE079-5F0D-4C4C-BDF6-8672B9519557}
+	EndGlobalSection
+EndGlobal

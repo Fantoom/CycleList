@@ -15,8 +15,9 @@ namespace System.Collections.Generic
 				else Reset(); 
 			}
 		}
+
 		/// <summary>
-		///	Returns element by index and sets currentIndex to index
+		///	Returns or sets element by index and sets currentIndex to passed index
 		/// </summary>
 		public new T this[int index] 
 		{
@@ -46,10 +47,41 @@ namespace System.Collections.Generic
 		{
 			currentIndex = -1;
 		}
+		/// <summary>
+		///	Clears array and Resets it
+		/// </summary>
+		public new void Clear()
+		{
+			Reset();
+			base.Clear();
+		}
+		/// <summary>
+		///	Removes item at index, and decreases currentIndex by 1
+		/// </summary>
+		public new void RemoveAt(int index)
+		{
+			var i = GetIndex(index);
+			base.RemoveAt(i);
+			if (currentIndex == i && currentIndex > -1)
+				currentIndex--;	
+		}
+		/// <summary>
+		///	Inserts item at index, and decreases currentIndex by 1
+		/// </summary>
+		public new void Insert(int index, T item)
+		{
+			var i = GetIndex(index);
+			base.Insert(i, item);
+			if (currentIndex == i && currentIndex > -1)
+				currentIndex--;
+		}
 
 		private int GetIndex(int index)
 		{
-			return index - index / this.Count * this.Count;
+			if (Count > 0)
+				return index % Count;
+			else
+				throw new ArgumentOutOfRangeException();
 		}
 	}
 }

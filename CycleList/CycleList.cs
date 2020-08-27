@@ -81,7 +81,7 @@ namespace System.Collections.Generic
 			if (Count > 0)
 				return index % Count;
 			else
-				throw new ArgumentOutOfRangeException();
+				return index;
 		}
 	}
 }

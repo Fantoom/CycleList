@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace System.Collections.Generic
 {
@@ -82,6 +83,26 @@ namespace System.Collections.Generic
 				return index % Count;
 			else
 				return index;
+		}
+
+		
+	}
+	public static class CycleListExtenstion
+	{
+		public static T GetCycled<T>(this IEnumerable<T> enumerable, int index)
+		{
+
+			if (enumerable is List<T>)
+			{
+				var list = enumerable as List<T>;
+				return list[index % list.Count];
+			}
+			else
+			{
+				var list = enumerable.ToList();
+				return list[index % list.Count];
+			}
+
 		}
 	}
 }

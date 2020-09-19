@@ -84,14 +84,11 @@ namespace System.Collections.Generic
 			else
 				return index;
 		}
-
-		
 	}
 	public static class CycleListExtenstion
 	{
 		public static T GetCycled<T>(this IEnumerable<T> enumerable, int index)
 		{
-
 			if (enumerable is List<T>)
 			{
 				var list = enumerable as List<T>;
@@ -102,7 +99,6 @@ namespace System.Collections.Generic
 				var list = enumerable.ToList();
 				return list[index % list.Count];
 			}
-
 		}
 	}
 }
